@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer } from 'react-toastify';
 import { ShopContext } from './context/ShopContext';
-import PrivateRoute from './components/PrivateRoute'; // import the wrapper
+import PrivateRoute from './components/PrivateRoute';
 
 const App = () => {
   const { token } = useContext(ShopContext);
@@ -32,10 +32,11 @@ const App = () => {
         
 
         {/* Protected routes */}
-        <Route path="/product/:productId" element={<PrivateRoute token={token}><Product /></PrivateRoute>} />
+        
         <Route path="/" element={<PrivateRoute token={token}><Home /></PrivateRoute>} />
         <Route path="/collection" element={<PrivateRoute token={token}><Collection /></PrivateRoute>} />
         <Route path="/cart" element={<PrivateRoute token={token}><Cart /></PrivateRoute>} />
+        <Route path="/product/:productId" element={<PrivateRoute token={token}><Product /></PrivateRoute>} />
         <Route path="/place-order" element={<PrivateRoute token={token}><PlaceOrder /></PrivateRoute>} />
         <Route path="/orders" element={<PrivateRoute token={token}><Orders /></PrivateRoute>} />
       </Routes>
