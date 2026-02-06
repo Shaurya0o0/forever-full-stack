@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {assets} from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
 const [visible, setVisible] = useState(false);
@@ -14,6 +15,7 @@ const logout = () => {
   localStorage.removeItem('token')
   setToken('')
   setCartItems({})
+  toast.dark("Logged Out");
   
 }
 
