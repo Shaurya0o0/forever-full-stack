@@ -12,10 +12,18 @@ const About = () => {
     <div className="my-10 flex flex-col md:flex-row gap-16">
       <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
       <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet similique quas alias odit rem magni eaque distinctio ipsam, eligendi fugiat quidem id? Neque blanditiis distinctio nemo, earum iste minima voluptatem.</p>
-      <p>come lkmmodsv ojmvpdmvp dvpsdvpo omvpsdmvp Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae possimus porro voluptates perspiciatis voluptas eum nesciunt repellat! Quo maxime harum minima inventore quasi ad debitis nam pariatur, beatae praesentium in!</p>
-      <b className='text-gray-800'>Our Mission</b>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus accusantium saepe sapiente quisquam voluptatem quidem, provident dolore non voluptates minus delectus rerum! Earum non, accusantium aut velit libero fuga aperiam!</p>
+      <p>
+      At <strong>StyleMe</strong>, we believe fashion is more than clothing —
+      it’s self‑expression. Our platform brings together curated collections
+      from emerging designers and trusted brands, giving you access to
+      high‑quality pieces that fit your lifestyle.
+    </p>
+    <p>
+      We combine sleek design with a seamless shopping experience, so you can
+      discover, browse, and buy with confidence. Whether you’re looking for
+      everyday essentials or statement pieces, StyleMe is your destination for
+      fashion that inspires.
+    </p>
       </div>
     </div>
     <div className="text-xl py-4">
